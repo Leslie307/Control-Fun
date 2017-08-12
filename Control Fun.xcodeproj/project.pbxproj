@@ -15,6 +15,8 @@
 		0F44B1441F3B21BB009E04BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F44B1421F3B21BB009E04BB /* LaunchScreen.storyboard */; };
 		0F44B14F1F3B21BC009E04BB /* Control_FunTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F44B14E1F3B21BC009E04BB /* Control_FunTests.m */; };
 		0F44B15A1F3B21BC009E04BB /* Control_FunUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F44B1591F3B21BC009E04BB /* Control_FunUITests.m */; };
+		0F44B16A1F3B27A9009E04BB /* apress_logo_172.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F44B1691F3B27A9009E04BB /* apress_logo_172.png */; };
+		0F44B16C1F3B27BF009E04BB /* apress_logo_344.png in Resources */ = {isa = PBXBuildFile; fileRef = 0F44B16B1F3B27BF009E04BB /* apress_logo_344.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,8 @@
 		0F44B1551F3B21BC009E04BB /* Control FunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Control FunUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F44B1591F3B21BC009E04BB /* Control_FunUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Control_FunUITests.m; sourceTree = "<group>"; };
 		0F44B15B1F3B21BC009E04BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F44B1691F3B27A9009E04BB /* apress_logo_172.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apress_logo_172.png; path = "../../../Beginning iOS 7 Source Code/04 - Control Fun/Control Fun/Images.xcassets/apress_logo.imageset/apress_logo_172.png"; sourceTree = "<group>"; };
+		0F44B16B1F3B27BF009E04BB /* apress_logo_344.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = apress_logo_344.png; path = Assets.xcassets/apress_logo.appiconset/apress_logo_344.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,8 @@
 		0F44B1341F3B21BB009E04BB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0F44B16B1F3B27BF009E04BB /* apress_logo_344.png */,
+				0F44B1691F3B27A9009E04BB /* apress_logo_172.png */,
 				0F44B1351F3B21BB009E04BB /* main.m */,
 			);
 			name = "Supporting Files";
@@ -207,7 +213,6 @@
 				TargetAttributes = {
 					0F44B1301F3B21BB009E04BB = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 3M236XLN2W;
 						ProvisioningStyle = Automatic;
 					};
 					0F44B1491F3B21BC009E04BB = {
@@ -249,7 +254,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F44B16C1F3B27BF009E04BB /* apress_logo_344.png in Resources */,
 				0F44B1441F3B21BB009E04BB /* LaunchScreen.storyboard in Resources */,
+				0F44B16A1F3B27A9009E04BB /* apress_logo_172.png in Resources */,
 				0F44B1411F3B21BB009E04BB /* Assets.xcassets in Resources */,
 				0F44B13F1F3B21BB009E04BB /* Main.storyboard in Resources */,
 			);
@@ -426,24 +433,26 @@
 		0F44B15F1F3B21BC009E04BB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3M236XLN2W;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Control Fun/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.apress.Control-Fun";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
 		0F44B1601F3B21BC009E04BB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 3M236XLN2W;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Control Fun/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.apress.Control-Fun";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -516,6 +525,7 @@
 				0F44B1601F3B21BC009E04BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F44B1611F3B21BC009E04BB /* Build configuration list for PBXNativeTarget "Control FunTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +534,7 @@
 				0F44B1631F3B21BC009E04BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0F44B1641F3B21BC009E04BB /* Build configuration list for PBXNativeTarget "Control FunUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +543,7 @@
 				0F44B1661F3B21BC009E04BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
